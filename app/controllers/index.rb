@@ -10,8 +10,13 @@ get '/school' do
     erb :school
 end
 
-get '/wishlist/:school' do 
-    p params[:school]
+get '/wishlist' do 
+    
+
+    erb :wishlist
+end
+
+get '/wishlist/:id' do
 
     erb :thanks
 end

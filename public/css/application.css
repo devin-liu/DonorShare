@@ -74,7 +74,12 @@
 }
 
 
-
+.schoolpage-body-container {
+    background-color: #ddd1e7;
+    border-top: 2px solid black;
+    margin-top: 10px;
+    height: 100vw;
+}
 
 
 

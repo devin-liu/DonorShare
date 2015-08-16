@@ -1,12 +1,15 @@
 get '/' do
     "Hello World!"
+
+    @schools = School.all
+    p @schools.first
     erb :index
     # erb 
 end
 
 get '/school' do 
     @school_name = params[:school]
-    @schools = School.all
+    @school = School.find(@school_name)
     erb :school
 end
 

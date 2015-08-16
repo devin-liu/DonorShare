@@ -27,8 +27,9 @@
                 </form> -->
                 <form method="get" action="/school">
                     <select name="school">
-                        <option value="orion">Orion HS</option>
-                        <option value="oriono">Oriono HS</option>
+                    	<%@schools.each do |school| %>
+                        <option value="<%=school.id%>"><%=school.name %></option>
+                    	<%end %>
                     </select>
                     <input type="submit" name="Submit" />
                 </form>

@@ -19,10 +19,18 @@
             </div>
 
         	<div class="homepage-header-logo-form-container">
-                <form>
-                    <select>
-                        <option>Orion HS</option>
+                <!-- <form action="/form" method="get" onchange="this.form.submit()">
+                    <select name="school_form">
+                        <option value="orion">Orion HS</option>
+                        <option value="orion">Oriono HS</option>
                     </select>
+                </form> -->
+                <form method="get" action="/school">
+                    <select name="school">
+                        <option value="orion">Orion HS</option>
+                        <option value="oriono">Oriono HS</option>
+                    </select>
+                    <input type="submit" name="Submit" />
                 </form>
             </div>
         </div>

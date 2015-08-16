@@ -7,16 +7,18 @@
         <p class="schoolpage-body-name-text"><%= @school[:name] %></p>
         <p class="schoolpage-body-location-text"><%= @school[:location] %></p>
 
-        <select>
-          <option value="Class One">Class One</option>
-          <option value="Class Two">Class Two</option>
-          <option value="Class Three">Class Three</option>
-          <option value="Class Four">Class Four</option>
-        </select>
-    </div>
+        <p>Select your wishlist</p>
 
-    <div>
-        
+        <form method="get" action="/wishlist">
+            <select name="school">
+                <option value="Class One">Class One</option>
+                <option value="Class Two">Class Two</option>
+                <option value="Class Three">Class Three</option>
+                <option value="Class Four">Class Four</option>
+            </select>
+            <input type="submit" name="Submit" />
+        </form>
+
     </div>
 </body>
 </html>

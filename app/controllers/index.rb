@@ -9,3 +9,14 @@ get '/school' do
     @schools = School.all
     erb :school
 end
+
+get '/wishlist' do 
+    
+
+    erb :wishlist
+end
+
+get '/wishlist/:id' do
+
+    erb :thanks
+end

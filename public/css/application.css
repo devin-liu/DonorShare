@@ -83,3 +83,12 @@
 
 
 
+.schoolpage-body-name-text {
+    color: white;
+    display: inline-block;
+}
+
+.schoolpage-body-location-text {
+    color: grey;
+    display: inline-block;
+}

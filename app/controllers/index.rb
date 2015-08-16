@@ -9,3 +9,9 @@ get '/school' do
     @school = {name: "Orion", location: "Orion, CA"}
     erb :school
 end
+
+get '/wishlist/:school' do 
+    p params[:school]
+
+    erb :thanks
+end

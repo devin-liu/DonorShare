@@ -44,6 +44,7 @@
     background-color: #ddd1e7;
     border-top: 2px solid black;
     margin-top: 10px;
+    padding-left: 60%
 }
 
 
@@ -52,6 +53,10 @@
     width: 60%;
     height: 100%;
     display: inline-block;
+    position: absolute;
+    left: 0;
+    text-align: center;
+    padding-top: 102px
 }
 
 .homepage-body-picture-container {

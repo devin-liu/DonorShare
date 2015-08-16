@@ -59,3 +59,17 @@
     height: 100%;
     display: inline-block;
 }
+
+.homepage-body-picture-img-container {
+    background: url(../imgs/child.jpg) no-repeat;
+    height: 400px;
+    width: 600px;
+    background-size: contain;
+
+}
+
+
+
+
+
+

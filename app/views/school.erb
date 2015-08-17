@@ -12,7 +12,7 @@
         <form method="get" action="/wishlist">
           
           <% @teachers.each do |teacher| %>  
-            <input type="radio" name="teacher_id" value="<%=teacher.id%>"/> <%=teacher.last_name%> <br>
+            <input type="radio" name="teacher_id" value="<%=teacher.id%>"/> <%= "#{teacher.first_name} #{teacher.last_name}"%> <br>
           <% end %>
           
 

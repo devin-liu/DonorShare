@@ -15,23 +15,20 @@
         
         <div class="homepage-body-login-container">
         	<div class="homepage-header-logo-text-container">
-                <p>Select your school</p>
+                
             </div>
 
         	<div class="homepage-header-logo-form-container">
-                <!-- <form action="/form" method="get" onchange="this.form.submit()">
-                    <select name="school_form">
-                        <option value="orion">Orion HS</option>
-                        <option value="orion">Oriono HS</option>
-                    </select>
-                </form> -->
+
                 <form method="get" action="/school">
+                    
                     <select name="school">
+                        <option disabled selected>Please Select A School</option>
                     	<%@schools.each do |school| %>
                         <option value="<%=school.id%>"><%=school.name %></option>
                     	<%end %>
                     </select>
-                    <input type="submit" name="Submit" />
+                    <input type="submit" value="View WishLists!" />
                 </form>
             </div>
         </div>

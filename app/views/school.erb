@@ -10,13 +10,13 @@
         <p>Select your wishlist</p>
 
         <form method="get" action="/wishlist">
-            <select name="school">
-                <option value="Class One">Class One</option>
-                <option value="Class Two">Class Two</option>
-                <option value="Class Three">Class Three</option>
-                <option value="Class Four">Class Four</option>
-            </select>
-            <input type="submit" name="Submit" />
+          
+          <% @teachers.each do |teacher| %>  
+            <input type="radio" name="teacher_id" value="<%=teacher.id%>"/> <%=teacher.last_name%> <br>
+          <% end %>
+          
+
+          <input type="submit" name="Submit" />
         </form>
 
     </div>
